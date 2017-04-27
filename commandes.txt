@@ -1,0 +1,13 @@
+
+# yum install git (required for plug-vim)
+$ cd
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+$ vim .vimrc
+call plug#begin('~/.vim/plugged')
+Plug 'pearofducks/ansible-vim'
+call plug#end()
+$ vim
+:PlugInstall
+When you edit a file type :
+:set ft=ansible
+
